@@ -77,3 +77,32 @@ button.addEventListener('click', () => {
         input.value = ''
     }
 })
+
+// const arr = [1, 2, 3, 4, 5, 6, 7]
+// console.log(arr);
+// console.log(JSON.stringify(arr))
+// console.log(JSON.parse(JSON.stringify(arr)))
+
+// setTimeout(() => {
+//     console.log('time-out');
+// }, 5000)
+
+// const interval = setInterval(() => {
+//     console.log('setInterval')
+//     clearInterval(interval)
+// }, 1000)
+const listImg = ['./img/img1.jpg', './img/img2.jpg', './img/img3.jpg']
+const slide = document.getElementById('slide')
+slide.innerHTML = `
+        <img src="${listImg[0]}" alt="">
+
+`
+let i = 1
+const renderImg = setInterval(() => {
+    if (i >= listImg.length) i = 0
+    slide.innerHTML = `
+        <img src="${listImg[i]}" alt="">
+`
+    i++
+}, 1000)
+
