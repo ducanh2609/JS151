@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        margin: 15vh auto;
+        width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #54d4fb;
+        box-shadow: 2px 2px 5px rgb(130, 129, 129);
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .btn-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    button+button {
+        margin-left: 20px;
+    }
+</style>
+
+<body>
+    <div class="container-xl">
+        <form class="needs-validation" id="register" novalidate>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" required>
+                <div class="invalid-feedback">
+                    Username is required
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <div class="mb-3">
+                <label for="confirm" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm" required>
+            </div>
+            <div class="btn-item">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-danger"><a href="index.html">Cancel</a> </button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+<script src="register.js"></script>
+
+</html>
