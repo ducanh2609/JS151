@@ -3,8 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  height: 100vh;
+}
 .header {
-  border: 1px solid red;
   padding: 10px;
 }

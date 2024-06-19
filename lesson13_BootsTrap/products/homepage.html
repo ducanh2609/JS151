@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .product {
+        display: flex;
+        flex-wrap: wrap;
+
+        box-sizing: border-box;
+    }
+
+    .product-item {
+        border: 1px solid red;
+        width: 200px;
+        box-sizing: border-box;
+        max-width: 300px;
+        margin: 10px;
+    }
+
+    .infor-box {
+        padding: 10px;
+    }
+
+    .price {
+        text-align: center;
+    }
+
+    .price span {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .description {
+        margin-bottom: 5px;
+    }
+
+    .add-card {
+        border-radius: 3px;
+        padding: 5px;
+        text-align: center;
+        background-color: rgba(5, 73, 95, 0.549);
+        color: white;
+    }
+
+    .add-card:hover {
+        cursor: pointer;
+        color: rgb(2, 0, 117);
+    }
+</style>
+
+<body>
+    <div class="product" id="product"></div>
+</body>
+<script src="homepage.js"></script>
+
+</html>
