@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+
+.header {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(206, 129, 129);
+  box-sizing: border-box;
+}
+.logo {
+  width: 20%;
+  height: 30px;
+}
+.logo img {
+  width: 50%;
+  height: 100%;
+}
+.header input {
+  height: 30px;
+  border-radius: 3px;
+  width: 150%;
+  padding: 0 10px;
+  outline: none;
+  border: none;
+}
+.header button {
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.header button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.register {
+  background-color: white;
+  border: 1px solid black;
+}
+.login {
+  background-color: rgb(27, 218, 243);
+  border: none;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header .btn-acount {
+  display: flex;
+  padding: 5px 0;
+}
+
+.header .btn-acount .card-icon {
+  position: relative;
+}
+
+.header .btn-acount .card-icon i {
+  color: rgba(1, 10, 136, 0.799);
+  margin: 0 15px;
+}
+
+.card-icon .count {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.944);
+  color: white;
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 0 2px;
+  top: -5px;
+  left: 50%;
+}
+
+.header .btn-acount .acount i {
+  color: rgb(12, 40, 249);
+  margin-right: 3px;
+}
+
+/* Container */
+.container {
+  background-color: rgb(135, 186, 253);
+  padding: 50px 0;
+}
+.product-detail {
+  background-color: rgb(241, 255, 183);
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 3px rgb(135, 135, 135);
+}
+.product-img {
+  width: 60%;
+}
+
+.product-img img {
+  width: 100%;
+}
+.detail-info {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product-name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.product-price {
+  font-size: 24px;
+}

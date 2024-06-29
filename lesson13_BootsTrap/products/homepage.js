@@ -53,11 +53,26 @@ for (let i = 0; i < productInfor.length; i++) {
     `
 }
 
+function getTotal() {
+    const total = document.getElementById('total')
+    const products = JSON.parse(localStorage.getItem('product-choice') || '[]')
+    const productCount = products.reduce((number, item) => {
+        number += item.count
+        return number
+    }, 0)
+    total.innerHTML = `${productCount}`
+}
 const addCart = document.getElementsByClassName('add-card')
-
+getTotal()
 console.log(addCart);
 for (let i = 0; i < addCart.length; i++) {
     addCart[i].addEventListener('click', () => {
+        const currentLogin = localStorage.getItem('currentLogin')
+        if (!currentLogin) {
+            alert('Bạn chưa đăng nhập')
+            window.location.href = '/lesson13_BootsTrap/pages/login.html'
+            return
+        }
         const data = JSON.parse(localStorage.getItem('product-choice') || '[]')
         console.log('card', addCart[i].id)
         console.log('data', data)
@@ -72,5 +87,6 @@ for (let i = 0; i < addCart.length; i++) {
             data[findProduct].count++
         }
         localStorage.setItem('product-choice', JSON.stringify(data))
+        getTotal()
     })
 }

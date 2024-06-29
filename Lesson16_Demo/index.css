@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.header {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(206, 129, 129);
+  box-sizing: border-box;
+}
+.header input {
+  height: 30px;
+  border-radius: 3px;
+  width: 100%;
+  padding: 0 10px;
+  outline: none;
+  border: none;
+}
+.header button {
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.header button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.register {
+  background-color: white;
+  border: 1px solid black;
+}
+.login {
+  background-color: rgb(27, 218, 243);
+  border: none;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header .btn-acount {
+  display: flex;
+  padding: 5px 0;
+}
+
+.header .btn-acount .card-icon {
+  position: relative;
+}
+
+.header .btn-acount .card-icon i {
+  color: rgba(1, 10, 136, 0.799);
+  margin: 0 15px;
+}
+
+.card-icon .count {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.944);
+  color: white;
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 0 2px;
+  top: -5px;
+  left: 50%;
+}
+
+.header .btn-acount .acount i {
+  color: rgb(12, 40, 249);
+  margin-right: 3px;
+}
+.logo {
+  width: 20%;
+  height: 30px;
+}
+.logo img {
+  width: 50%;
+  height: 100%;
+}
+/* Container */
+.product {
+  display: flex;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+}
+
+.product-item {
+  border: 1px solid red;
+  width: 200px;
+  box-sizing: border-box;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.infor-box {
+  padding: 10px;
+}
+
+.price {
+  text-align: center;
+}
+
+.price span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.image {
+  width: 100%;
+}
+
+.description {
+  margin-bottom: 5px;
+}
+
+.add-card {
+  border-radius: 3px;
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(5, 73, 95, 0.549);
+  color: white;
+}
+
+.add-card:hover {
+  cursor: pointer;
+  color: rgb(2, 0, 117);
+}
+
+/* Footer */
